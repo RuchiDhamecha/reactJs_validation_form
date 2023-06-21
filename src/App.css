@@ -1,38 +1,85 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.form-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 20px;
+  background: linear-gradient(to right, #000046, #1cb5e0);
+  border: 1px solid #173140;
+  border-radius: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+h2 {
+  color: whitesmoke;
+  font-size: 24px;
+  margin-bottom: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  color: #c2d3dc;
+  font-size: 16px;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='radio'],
+input[type='checkbox'] {
+  padding: 10px;
+  border: 1px solid #173140;
+  border-radius: 10px;
+  background-color: #b5d6ee;
+  color: #00080c;
+}
+
+input[type='text'],
+input[type='email'] {
+  width: 65%;
+  margin-left: 20px;
+}
+
+.radio-group label {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  color: #aec9d6;
+  font-size: 18px;
+}
+
+button[type='submit'] {
+  padding: 10px 20px;
+  background: linear-gradient(to right, #36d1dc, #5b86e5);
+  border:3px #c7ddea;
+  color: #FFFFFF;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 20px 0px 20px 0px;
+}
+button:hover{
+  scale: 1.1;
+  background-color: #61a1c6;
+  border-radius: 0px 20px 00px 20px;
+  
+}
+
+.submitted-data {
+  margin-top: 30px;
+  background-color: #c4dfeb;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #dec9c9ca;
+}
+
+.submitted-data h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
 }
